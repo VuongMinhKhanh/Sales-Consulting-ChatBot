@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #ecf0f1;
+        }
+
+        #chat-container {
+            width: 100%;
+            max-width: 450px;
+            background: #34495e;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        #chatbox {
+            flex: 1;
+            padding: 15px;
+            border-bottom: 1px solid #1abc9c;
+            overflow-y: auto;
+            background: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Căn lề cho các tin nhắn bot nằm bên trái */
+        }
+
+        #input-container {
+            display: flex;
+            border-top: 1px solid #1abc9c;
+            background: #34495e;
+            padding: 10px;
+        }
+
+        #input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            font-size: 16px;
+            background: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #1abc9c;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #16a085;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+            display: flex;
+            justify-content: flex-end;
+            /* Căn lề tin nhắn theo chiều ngang */
+        }
+
+        .user {
+            background-color: #1abc9c;
+            color: white;
+            align-self: flex-end;
+            /* Đẩy tin nhắn người dùng sang bên phải */
+            margin-left: auto;
+        }
+
+        .bot {
+            background-color: #95a5a6;
+            color: black;
+            align-self: flex-start;
+            /* Đẩy tin nhắn bot sang bên trái */
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chatbox"></div>
+        <div id="input-container">
+            <input type="text" id="input" placeholder="Type a message" autocomplete="off" />
+
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('input');
+            const message = input.value.trim();
+            if (message === '') return;
+
+            input.value = '';
+
+            // Hiển thị tin nhắn người dùng
+            const chatbox = document.getElementById('chatbox');
+            chatbox.innerHTML += `<div class="message user">${message}</div>`;
+
+            // Gửi tin nhắn đến server và nhận phản hồi
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message })
+            });
+            const data = await response.json();
+
+            // Hiển thị phản hồi của chatbot
+            chatbox.innerHTML += `<div class="message bot">${data.response}</div>`;
+            chatbox.scrollTop = chatbox.scrollHeight; // Cuộn xuống cuối
+        }
+
+        document.getElementById('input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của Enter
+                sendMessage();
+            }
+        });
+        // Tự động focus vào ô nhập liệu khi trang tải
+        window.onload = function () {
+            document.getElementById('input').focus();
+        };
+    </script>
+</body>
+
+</html>
