@@ -9,9 +9,10 @@ The **Sales Consulting ChatBot** project aims to develop an automated sales cons
 - **Reinforcement Learning:** Integrates a basic RL method with Excel data to enable the ChatBot to learn and improve its performance based on user feedback.
 - **Real-Time Data Updates:** Ensures that the ChatBot's responses are always accurate and relevant, reflecting any changes in data and business strategies.
 
+## Installation
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-repo/sales-consulting-chatbot.git
+    git clone https://github.com/VuongMinhKhanh/Sales-Consulting-ChatBot.git sales-consulting-chatbot
     cd sales-consulting-chatbot
     ```
 2. **Install required dependencies:**
