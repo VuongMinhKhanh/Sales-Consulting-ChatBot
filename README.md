@@ -25,7 +25,7 @@ The **Sales Consulting ChatBot** project aims to develop an automated sales cons
     ```
 
 ## Usage
-Once running, you can interact with the ChatBot through command prompt (venv activated): python chatbot.py. The ChatBot's localhost will automatically be shown and you can interact inquiries and receive sales consulting information quickly and accurately.
+Once running, you can interact with the ChatBot through command prompt (venv activated): python chatbot.py. The ChatBot's localhost will be shown and you can interact inquiries and receive sales consulting information quickly and accurately.
 
 ## Future Improvements
 Future enhancements will focus on expanding the product database, improving the language model's accuracy, and integrating additional features like user behavior analysis to further enhance the customer experience
