@@ -9,8 +9,7 @@ The **Sales Consulting ChatBot** project aims to develop an automated sales cons
 - **Reinforcement Learning:** Integrates a basic RL method with Excel data to enable the ChatBot to learn and improve its performance based on user feedback.
 - **Real-Time Data Updates:** Ensures that the ChatBot's responses are always accurate and relevant, reflecting any changes in data and business strategies.
 
-### Support Code
-
+## Support Code
 We needed some kinds of EDA, customized data crawling, data preprocessing and optimization before actually building our bot, please refer the code in Resource -> Support Code or our visualizations in Google Colab:
 - EDA: [https://colab.research.google.com/drive/1XXaIzqBGHrAjb1ER4miZO2r-oNSrYfsG?usp=sharing](url)
 - Customized data crawling with BeautifulSoup4: [https://colab.research.google.com/drive/17lIrxRWQwxX1P5r1f0IAiRZZVJRkBgtG?usp=sharing](url)
