@@ -11,7 +11,7 @@ The **Sales Consulting ChatBot** project aims to develop an automated sales cons
 
 ### Support Code
 
-* We needed some kinds of EDA, customized data crawling, data preprocessing and optimization before actually building our bot, please refer the code in Resource -> Support Code or our visualizations in Google Colab:
+We needed some kinds of EDA, customized data crawling, data preprocessing and optimization before actually building our bot, please refer the code in Resource -> Support Code or our visualizations in Google Colab:
 - EDA: [https://colab.research.google.com/drive/1XXaIzqBGHrAjb1ER4miZO2r-oNSrYfsG?usp=sharing](url)
 - Customized data crawling with BeautifulSoup4: [https://colab.research.google.com/drive/17lIrxRWQwxX1P5r1f0IAiRZZVJRkBgtG?usp=sharing](url)
 - Data preprocessing with Pandas: [https://colab.research.google.com/drive/148nOdHIfkQeXkwffxLmNwsPfaoBtz-ei?usp=sharing](url)
