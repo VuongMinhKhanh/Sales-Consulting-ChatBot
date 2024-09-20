@@ -41,8 +41,8 @@ Future enhancements will focus on expanding the product database, improving the 
 We welcome contributions from the community. Please create a pull request or open an issue if you would like to contribute to this project.
 
 ## My 12-minute presentation for ChatBot integration for business
-    - In this video, I cover current problems with SMEs, Why using ChatBot (with simple numeric survey), ChatBot's EDA, and SWOT.
-    - Video link: https://www.youtube.com/watch?si=LckEf59Mguua2EEn&v=OJ2hUt6nVuk&feature=youtu.be
+- In this video, I cover current problems with SMEs, Why using ChatBot (with simple numeric survey), ChatBot's EDA, and SWOT.
+- Video link: [https://www.youtube.com/watch?si=LckEf59Mguua2EEn&v=OJ2hUt6nVuk&feature=youtu.be](url)
 
 ---
 
