@@ -1,5 +1,9 @@
 # Sales-Consulting-ChatBot
 
+## My 12-minute presentation for ChatBot integration for business
+- In this video, I cover current problems with SMEs, Why using ChatBot (with simple numeric survey), ChatBot's EDA, and SWOT.
+- Video link: https://www.youtube.com/watch?si=LckEf59Mguua2EEn&v=OJ2hUt6nVuk&feature=youtu.be
+
 ## Introduction
 The **Sales Consulting ChatBot** project aims to develop an automated sales consulting tool to assist businesses in managing customer interactions and optimizing sales processes. This ChatBot leverages advanced artificial intelligence (AI) technologies, including large language models (LLMs) and reinforcement learning algorithms, to provide accurate information and deliver an enhanced user experience.
 
@@ -39,10 +43,6 @@ Future enhancements will focus on expanding the product database, improving the 
 
 ## Contributions
 We welcome contributions from the community. Please create a pull request or open an issue if you would like to contribute to this project.
-
-## My 12-minute presentation for ChatBot integration for business
-- In this video, I cover current problems with SMEs, Why using ChatBot (with simple numeric survey), ChatBot's EDA, and SWOT.
-- Video link: https://www.youtube.com/watch?si=LckEf59Mguua2EEn&v=OJ2hUt6nVuk&feature=youtu.be
 
 ---
 
